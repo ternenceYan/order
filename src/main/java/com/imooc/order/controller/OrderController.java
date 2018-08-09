@@ -87,7 +87,7 @@ public class OrderController {
         List<String> productIdList = new ArrayList<>();
         productIdList.add("000001");
         productIdList.add("000002");
-        logger.info("========================开始准备调用商品服务，获取商品列表========================");
+        logger.info("========================开始准备调用商品服务，获取商品列表 ========================");
         List<ProductInfo> productInfoList = productClient.getProductInfo(productIdList);
         return productInfoList;
     }
