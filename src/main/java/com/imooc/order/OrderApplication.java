@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@EnableDiscoveryClient()
+@EnableDiscoveryClient
 @MapperScan(basePackages = "com.imooc.order.mapper")
 @EnableAsync
 @EnableFeignClients
