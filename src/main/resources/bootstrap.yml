@@ -7,3 +7,4 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
+      #aaa
