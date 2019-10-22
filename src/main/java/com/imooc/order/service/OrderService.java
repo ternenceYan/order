@@ -6,6 +6,7 @@ import com.imooc.order.pojo.OrderDetail;
 public interface OrderService {
     /**
      * 创建订单(test)
+     *
      * @return
      * @throws Exception
      */
@@ -14,5 +15,5 @@ public interface OrderService {
     /**
      * 创建订单
      */
-    OrderDto create (OrderDto orderDto)throws Exception;
+    OrderDto create(OrderDto orderDto) throws Exception;
 }

@@ -93,7 +93,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.productid
      *
      * @return the value of product_info.productid
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public String getProductid() {
@@ -105,7 +104,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.productid
      *
      * @param productid the value for product_info.productid
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProductid(String productid) {
@@ -117,7 +115,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.productname
      *
      * @return the value of product_info.productname
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public String getProductname() {
@@ -129,7 +126,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.productname
      *
      * @param productname the value for product_info.productname
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProductname(String productname) {
@@ -141,7 +137,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.productprice
      *
      * @return the value of product_info.productprice
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public BigDecimal getProductprice() {
@@ -153,7 +148,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.productprice
      *
      * @param productprice the value for product_info.productprice
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProductprice(BigDecimal productprice) {
@@ -165,7 +159,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.productstock
      *
      * @return the value of product_info.productstock
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public Integer getProductstock() {
@@ -177,7 +170,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.productstock
      *
      * @param productstock the value for product_info.productstock
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProductstock(Integer productstock) {
@@ -189,7 +181,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.productdescription
      *
      * @return the value of product_info.productdescription
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public String getProductdescription() {
@@ -201,7 +192,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.productdescription
      *
      * @param productdescription the value for product_info.productdescription
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProductdescription(String productdescription) {
@@ -213,7 +203,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.producticon
      *
      * @return the value of product_info.producticon
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public String getProducticon() {
@@ -225,7 +214,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.producticon
      *
      * @param producticon the value for product_info.producticon
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProducticon(String producticon) {
@@ -237,7 +225,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.productstatus
      *
      * @return the value of product_info.productstatus
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public Byte getProductstatus() {
@@ -249,7 +236,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.productstatus
      *
      * @param productstatus the value for product_info.productstatus
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setProductstatus(Byte productstatus) {
@@ -261,7 +247,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.categorytype
      *
      * @return the value of product_info.categorytype
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public Integer getCategorytype() {
@@ -273,7 +258,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.categorytype
      *
      * @param categorytype the value for product_info.categorytype
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setCategorytype(Integer categorytype) {
@@ -285,7 +269,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.createtime
      *
      * @return the value of product_info.createtime
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public Date getCreatetime() {
@@ -297,7 +280,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.createtime
      *
      * @param createtime the value for product_info.createtime
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setCreatetime(Date createtime) {
@@ -309,7 +291,6 @@ public class ProductInfo {
      * This method returns the value of the database column product_info.updatetime
      *
      * @return the value of product_info.updatetime
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public Date getUpdatetime() {
@@ -321,7 +302,6 @@ public class ProductInfo {
      * This method sets the value of the database column product_info.updatetime
      *
      * @param updatetime the value for product_info.updatetime
-     *
      * @mbggenerated Wed Jul 25 18:06:48 CST 2018
      */
     public void setUpdatetime(Date updatetime) {

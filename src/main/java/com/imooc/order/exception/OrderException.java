@@ -6,7 +6,7 @@ public class OrderException {
 
     private String message;
 
-    public OrderException(Integer code ,String message) {
+    public OrderException(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

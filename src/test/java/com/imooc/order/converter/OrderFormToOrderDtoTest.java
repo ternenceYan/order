@@ -25,10 +25,11 @@ import static org.junit.Assert.*;
 public class OrderFormToOrderDtoTest {
 
     @Test
-    public void convert() throws Exception{
+    public void convert() throws Exception {
         String str = "[{productid:\"000002\",productquantity:2},{productid:\"000001\",productquantity:2}]";
 //        JSONObject object = JSON.parseObject(str);
-        ArrayList<OrderTemp> list = JSON.parseObject(str,new TypeReference<ArrayList<OrderTemp>>(){});
+        ArrayList<OrderTemp> list = JSON.parseObject(str, new TypeReference<ArrayList<OrderTemp>>() {
+        });
         System.out.print("aa");
     }
 }

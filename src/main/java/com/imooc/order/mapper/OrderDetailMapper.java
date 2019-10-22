@@ -8,9 +8,11 @@ public interface OrderDetailMapper extends MyMapper<OrderDetail> {
 
     /**
      * 创建订单
+     *
      * @return
      * @throws Exception
      */
-    OrderDetail createOrder (OrderDetail orderDetail) throws Exception;
+    OrderDetail createOrder(OrderDetail orderDetail) throws Exception;
+
     int insert(OrderDetail record);
 }

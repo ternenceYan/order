@@ -9,7 +9,7 @@
         <property name="endingDelimiter" value="`"/>
 
         <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
-            <!--<property name="mappers" value="com.utils.MyMapper"/>-->
+        <!--<property name="mappers" value="com.utils.MyMapper"/>-->
         <!--</plugin>-->
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
@@ -21,15 +21,15 @@
         <!-- 对于生成的pojo所在包 -->
         <javaModelGenerator targetPackage="com.imooc.order.pojo" targetProject="src/main/java"/>
 
-		<!-- 对于生成的mapper所在目录 -->
+        <!-- 对于生成的mapper所在目录 -->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-		<!-- 配置mapper对应的java映射 -->
+        <!-- 配置mapper对应的java映射 -->
         <javaClientGenerator targetPackage="com.imooc.order.mapper" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
 
-		<table tableName="order_master"></table>
-		 
+        <table tableName="order_master"></table>
+
     </context>
 </generatorConfiguration>

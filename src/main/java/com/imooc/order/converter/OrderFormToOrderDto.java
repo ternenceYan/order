@@ -18,9 +18,10 @@ public class OrderFormToOrderDto {
         orderDto.setBuyeraddress(orderForm.getAddress());
 
         String str = "[{productid:\"000002\",productquantity:2},{productid:\"000001\",productquantity:2}]";
-        ArrayList<OrderTemp> list = JSON.parseObject(str,new TypeReference<ArrayList<OrderTemp>>(){});
+        ArrayList<OrderTemp> list = JSON.parseObject(str, new TypeReference<ArrayList<OrderTemp>>() {
+        });
 //        ArrayList<OrderTemp> list = JSON.parseObject(orderForm.getItems(),new TypeReference<ArrayList<OrderTemp>>(){});
         orderDto.setOrderDetailList(list);
         return orderDto;
-     }
+    }
 }

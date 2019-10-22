@@ -26,6 +26,7 @@ public class OrderServiceImpl implements OrderService {
 
     /**
      * 订单test
+     *
      * @throws Exception
      */
     @Override
@@ -45,10 +46,10 @@ public class OrderServiceImpl implements OrderService {
     }
 
     /**
-     *   1.查询商品信息（调用商品服务）
-     *   2.计算总价
-     *   3.扣库存（调用商品服务）
-     *   4.订单入库
+     * 1.查询商品信息（调用商品服务）
+     * 2.计算总价
+     * 3.扣库存（调用商品服务）
+     * 4.订单入库
      *
      * @param orderDto
      * @return

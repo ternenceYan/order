@@ -43,10 +43,11 @@ public class OrderController {
     private ProductClient productClient;
 
     @RequestMapping("createOrderDetail")
-    public String createOrder() throws  Exception{
+    public String createOrder() throws Exception {
         orderService.createOrder();
         return "ok";
     }
+
     /**
      * 1.参数校验
      * 2.查询商品信息（调用商品服务）
@@ -55,11 +56,11 @@ public class OrderController {
      * 5.订单入库
      */
     @RequestMapping("/create")
-    public ResultVO<Map<String,String>> create (@Valid OrderForm orderForm, BindingResult bindingResult) throws Exception{
+    public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm, BindingResult bindingResult) throws Exception {
         if (bindingResult.hasErrors()) {
             List<ObjectError> ls = bindingResult.getAllErrors();
             for (int i = 0; i < ls.size(); i++) {
-                logger.error("error:"+ls.get(i));
+                logger.error("error:" + ls.get(i));
             }
 //            logger.error("【创建订单】参数不正确，orderForm={}",orderForm);
         }
@@ -68,7 +69,7 @@ public class OrderController {
         if (CollectionUtils.isEmpty(orderDto.getOrderDetailList())) {
             logger.error("购物车为空");
         }
-       //查询商品信息
+        //查询商品信息
         List<String> productIdList = new ArrayList<>();
         for (OrderTemp orderDetail : orderDto.getOrderDetailList()) {
             productIdList.add(orderDetail.getProductid());
@@ -76,14 +77,14 @@ public class OrderController {
         logger.info("开始准备调用商品服务，查询商品列表=======================");
         List<ProductInfo> productInfoList = productClient.getProductInfo(productIdList);
         OrderDto result = orderService.create(orderDto);
-        Map<String,String> map = new HashMap<>();
-        map.put("orderId",result.getOrderid());
+        Map<String, String> map = new HashMap<>();
+        map.put("orderId", result.getOrderid());
         return ResultVOUtil.success(map);
     }
 
 
     @GetMapping("/getProductList")
-    public  List<ProductInfo> getProductList() throws Exception{
+    public List<ProductInfo> getProductList() throws Exception {
         List<String> productIdList = new ArrayList<>();
         productIdList.add("000001");
         productIdList.add("000002");
