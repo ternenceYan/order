@@ -89,24 +89,21 @@ public class ClientController {
          * 含有参数的REST请求
          */
         HttpHeaders headers = new HttpHeaders();
-        MediaType type = MediaType.parseMediaType("application/json;charset=UTF-8");
-        headers.setContentType(type);
-
         MultiValueMap<String,String> postParams = new LinkedMultiValueMap<>();
         postParams.add("id","1");
         postParams.add("name","tom");
 
         HttpEntity<MultiValueMap<String,String>> entity = new HttpEntity<MultiValueMap<String,String>>(postParams,headers);
 
-        ResponseEntity<String> responseEntity = restTemplate.postForEntity("http://localhost:8081/product/msg",null,String.class);
+        ResponseEntity<String> responseEntity = restTemplate.postForEntity("http://PRODUCT/product/msg1",entity,String.class);
         String jsonData = responseEntity.getBody();
         return jsonData;
     }
 
     @RequestMapping("/msg3")
     public String getProductMsg3 () {
-//        String response3 = restTemplate1.getForObject("http://localhost:8081/product/msg", String.class);
-        String response3 = restTemplate1.getForObject("http://PRODUCT/msg", String.class);
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://PRODUCT/product/msg", String.class);
+        String response3 = responseEntity.getBody();
         return response3;
     }
 
